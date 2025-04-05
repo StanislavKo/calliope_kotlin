@@ -1,0 +1,13 @@
+Aggressive
+Calm
+Chilled
+Dark
+Energetic
+Epic
+Ethereal
+Happy
+Romantic
+Sad
+Scary
+Sexy
+Uplifting

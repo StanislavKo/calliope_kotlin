@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3303/calliope?useSSL=false&allowMultiQueries=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: calliopecrud
+    password: qwerty
+
+advertisement:
+  generation:
+    docker-fs-prefix: //g/tmp/calliope
+    fs-prefix: g:\tmp\calliope\

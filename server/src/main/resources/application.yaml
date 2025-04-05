@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://{$DB_HOST}:{$DB_PORT}/calliope?useSSL=false&allowMultiQueries=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: {$DB_USERNAME}
+    password: {$DB_PASSWORD}
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+        column_ordering_strategy: legacy
+
+advertisement:
+  generation:
+    docker-fs-prefix: /tmp/calliope
+    fs-prefix: /tmp/calliope/
+
+openai:
+  lambda-url: ${CALLIOPE_OPENAI_LAMBDA_URL}
+azure:
+  subscription-key: ${CALLIOPE_AZURE_SUBSCRIPTION_KEY}
+aws:
+  region: ${CALLIOPE_AWS_REGION:us-east-1}
+  access-key: ${CALLIOPE_AWS_ACCESS_KEY}
+  secret-key: ${CALLIOPE_AWS_SECRET_KEY}
+google:
+  key: ${CALLIOPE_GOOGLE_KEY}
+  project: ${CALLIOPE_GOOGLE_PROJECT}
+yandex:
+  key: ${CALLIOPE_YANDEX_KEY}

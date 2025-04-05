@@ -1,0 +1,14 @@
+angry
+dark
+energetic
+epic
+euphoric
+happy
+mysterious
+relaxing
+romantic
+sad
+scary
+glamorous
+uplifting
+sentimental

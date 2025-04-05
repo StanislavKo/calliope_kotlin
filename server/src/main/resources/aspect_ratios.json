@@ -1,0 +1,5 @@
+[
+  {"width":  1, "height":  1, "title": "1x1"},
+  {"width":  9, "height":  16, "title": "9x16"},
+  {"width":  16, "height":  9, "title": "16x9"}
+]
